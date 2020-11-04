@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<title>TV Maze Example</title>
+	<!-- include an external style sheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="style-v1.css">  		
+	<!-- include an external JavaScript file -->
+	<script src="apiexample-v1.js"></script>
+
+</head>
+
+<body>
+
+<div class = "frame_container">
+
+	<div class = "item_search_bar_left"></div>
+	<div class = "item_search_bar_middle">
+	
+		<div class="img_container"> <img src="tvm-header-logo.png" alt = "logo" class= "logo" ></div>
+		
+		<div class="search_container">
+			 <div class="search">
+				<input id="search_input" type="text" class="searchTerm" placeholder="Search Shows">
+				<button type="submit" class="searchButton" onclick="fetchData()">
+				  <i class="fa fa-search"></i>
+			   </button>
+			 </div>
+		 </div>
+	
+	</div>
+	<div class = "item_search_bar_right"></div>
+	
+	
+	<div class = "item_menu_bar_left"></div>
+	<div class = "item_menu_bar_middle">
+	<a href="index-v1.html">HOME</a>
+	<a href="#" onclick="display_shows();">SHOW</a>
+	<a href="#">PEOPLE</a>
+	<a href="#">ARTICLES</a>
+	</div>
+	<div class = "item_menu_bar_right"></div>
+	
+	
+	
+	<div class = "item_body_bar_left"> </div>
+	<div id="body_bar_middle" class = "item_body_bar_middle">
+					<div id="main" class = "landing_container">
+						<div class = "item_landing_left">  </div>
+						<div class = "item_landing_middle">
+							<br>
+							<h1 class = "welcome">Welcome to my TV GUIDE</h1>
+							<h1 class = "welcome_hint">Use the search bar to find a TV Show</h1>
+							<br>
+							<i class="fa fa-tv" style="font-size:10vw;color:#203864; "></i> 
+							
+							
+							<br><br><br>
+							<p>This site uses APIs provided by <a href="http://api.tvmaze.com"> TV Maze!</a><p>
+						</div>
+					
+				
+						<div class = "item_landing_right"> </div>
+						
+						
+						
+					</div>
+	</div>
+	<div class = "item_body_bar_right">
+	</div>
+
+</div>
+
+<div id="lightbox" onclick="closeLightBox()">
+			<div id="message" class = "message-container">
+				<div class="message-item1" id="M_LEFT"></div>
+				<div class="message-item2" id="M_RIGHT"></div>
+				
+			</div>
+			
+</div>
+
+
+</body>
+
+</html>
